@@ -14,6 +14,7 @@
 		86B636C9232C37EF00E366AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B636C7232C37EF00E366AC /* LaunchScreen.storyboard */; };
 		86B636D4232C37F000E366AC /* tableviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B636D3232C37F000E366AC /* tableviewsTests.swift */; };
 		86B636DF232C37F000E366AC /* tableviewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B636DE232C37F000E366AC /* tableviewsUITests.swift */; };
+		86B636ED232C3F2900E366AC /* CeldaAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B636EC232C3F2900E366AC /* CeldaAlumnoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		86B636DA232C37F000E366AC /* tableviewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableviewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B636DE232C37F000E366AC /* tableviewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableviewsUITests.swift; sourceTree = "<group>"; };
 		86B636E0232C37F000E366AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B636EC232C3F2900E366AC /* CeldaAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAlumnoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				86B636C5232C37EF00E366AC /* Assets.xcassets */,
 				86B636C7232C37EF00E366AC /* LaunchScreen.storyboard */,
 				86B636CA232C37EF00E366AC /* Info.plist */,
+				86B636EC232C3F2900E366AC /* CeldaAlumnoController.swift */,
 			);
 			path = tableviews;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				86B636C1232C37DD00E366AC /* ViewController.swift in Sources */,
 				86B636BF232C37DD00E366AC /* AppDelegate.swift in Sources */,
+				86B636ED232C3F2900E366AC /* CeldaAlumnoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
