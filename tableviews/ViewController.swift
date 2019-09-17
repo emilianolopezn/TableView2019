@@ -11,12 +11,16 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
-    let alumnos = ["Gabriel", "Ana Lourdes", "Joel",
-    "Trejo", "Araceli", "Karen"]
+    var alumnos : [Alumno] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        alumnos.append(Alumno(nombre: "Ana", apellido: "García", matricula: "ABC123"))
+        alumnos.append(Alumno(nombre: "Jose", apellido: "Lopez", matricula: "XYZ123"))
+        alumnos.append(Alumno(nombre: "Maria", apellido: "Perez", matricula: "YGH745"))
+        
+        alumnos.append(Alumno(nombre: "Pedro", apellido: "Gonzalez", matricula: "UJL456", correo: "pedro@correo.com"))
     }
     
     //Numero de secciones (siempre 1)
@@ -31,11 +35,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Contenido de cada celda
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaAlumno")
+        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaAlumno") as? CeldaAlumnoController
+        
+        
+        celda?.lblNombre.text = alumnos[indexPath.row].nombre
+        celda?.lblApellidos.text =
+            alumnos[indexPath.row].apellido
+        celda?.lblMatricula.text =
+            alumnos[indexPath.row].matricula
+        celda?.lblCorreo.text =
+            alumnos[indexPath.row].correo
         
         return celda!
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (alumnos[indexPath.row].correo != nil ) {
+            return 120
+        }
+        return 78
+    }
+    
 
 }
 

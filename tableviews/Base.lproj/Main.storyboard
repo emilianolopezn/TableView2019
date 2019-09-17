@@ -22,30 +22,61 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="95" id="7bL-Eh-648" customClass="CeldaAlumnoController" customModule="tableviews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="95"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="120" id="7bL-Eh-648" customClass="CeldaAlumnoController" customModule="tableviews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7bL-Eh-648" id="ScR-lH-pYy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSI-Ew-yDe">
-                                                    <rect key="frame" x="20" y="31" width="93.5" height="32.5"/>
+                                                    <rect key="frame" x="20" y="11" width="93.5" height="32.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlb-xv-rWn">
+                                                    <rect key="frame" x="20" y="51" width="70.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matrícula" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-nD-eeU">
+                                                    <rect key="frame" x="323" y="17" width="71" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-nB-bNn">
+                                                    <rect key="frame" x="20" y="80" width="42.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="NSI-Ew-yDe" firstAttribute="centerY" secondItem="ScR-lH-pYy" secondAttribute="centerY" id="d3x-VP-qlt"/>
+                                                <constraint firstItem="CHb-nD-eeU" firstAttribute="top" secondItem="ScR-lH-pYy" secondAttribute="topMargin" constant="6" id="8xL-Ts-ceg"/>
+                                                <constraint firstItem="Bqy-nB-bNn" firstAttribute="leading" secondItem="ScR-lH-pYy" secondAttribute="leadingMargin" id="PgZ-Qa-Slc"/>
+                                                <constraint firstItem="zlb-xv-rWn" firstAttribute="top" secondItem="NSI-Ew-yDe" secondAttribute="bottom" constant="7.5" id="WrU-PS-1pi"/>
+                                                <constraint firstItem="CHb-nD-eeU" firstAttribute="trailing" secondItem="ScR-lH-pYy" secondAttribute="trailingMargin" id="e9o-fF-qzE"/>
+                                                <constraint firstItem="zlb-xv-rWn" firstAttribute="leading" secondItem="ScR-lH-pYy" secondAttribute="leadingMargin" id="ejT-G8-h1h"/>
+                                                <constraint firstItem="Bqy-nB-bNn" firstAttribute="top" secondItem="zlb-xv-rWn" secondAttribute="bottom" constant="8" id="gom-h3-fMl"/>
+                                                <constraint firstItem="NSI-Ew-yDe" firstAttribute="top" secondItem="ScR-lH-pYy" secondAttribute="topMargin" id="rVS-1u-YtU"/>
                                                 <constraint firstItem="NSI-Ew-yDe" firstAttribute="leading" secondItem="ScR-lH-pYy" secondAttribute="leadingMargin" id="sFP-30-O9V"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblApellidos" destination="zlb-xv-rWn" id="dBI-w3-lGx"/>
+                                            <outlet property="lblCorreo" destination="Bqy-nB-bNn" id="rLS-Vr-b1v"/>
+                                            <outlet property="lblMatricula" destination="CHb-nD-eeU" id="8BH-Zl-MgB"/>
                                             <outlet property="lblNombre" destination="NSI-Ew-yDe" id="HEm-Bh-Bab"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0BI-O2-zSH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FF5-Cc-fNz"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

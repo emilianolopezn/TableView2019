@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8617C96123317BF400F96523 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8617C96023317BF400F96523 /* Alumno.swift */; };
 		86B636BF232C37DD00E366AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B636BE232C37DD00E366AC /* AppDelegate.swift */; };
 		86B636C1232C37DD00E366AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B636C0232C37DD00E366AC /* ViewController.swift */; };
 		86B636C4232C37DD00E366AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B636C2232C37DD00E366AC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8617C96023317BF400F96523 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		86B636BB232C37DD00E366AC /* tableviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B636BE232C37DD00E366AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B636C0232C37DD00E366AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8617C95B23317AD600F96523 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				86B636EC232C3F2900E366AC /* CeldaAlumnoController.swift */,
+				86B636C0232C37DD00E366AC /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8617C95C23317B0000F96523 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86B636C5232C37EF00E366AC /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8617C95D23317B2100F96523 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				86B636CA232C37EF00E366AC /* Info.plist */,
+				86B636BE232C37DD00E366AC /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		8617C95E23317B2B00F96523 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8617C96023317BF400F96523 /* Alumno.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8617C95F23317B3C00F96523 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86B636C2232C37DD00E366AC /* Main.storyboard */,
+				86B636C7232C37EF00E366AC /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		86B636B2232C37DC00E366AC = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +144,11 @@
 		86B636BD232C37DD00E366AC /* tableviews */ = {
 			isa = PBXGroup;
 			children = (
-				86B636BE232C37DD00E366AC /* AppDelegate.swift */,
-				86B636C0232C37DD00E366AC /* ViewController.swift */,
-				86B636C2232C37DD00E366AC /* Main.storyboard */,
-				86B636C5232C37EF00E366AC /* Assets.xcassets */,
-				86B636C7232C37EF00E366AC /* LaunchScreen.storyboard */,
-				86B636CA232C37EF00E366AC /* Info.plist */,
-				86B636EC232C3F2900E366AC /* CeldaAlumnoController.swift */,
+				8617C95F23317B3C00F96523 /* Storyboards */,
+				8617C95E23317B2B00F96523 /* Models */,
+				8617C95D23317B2100F96523 /* App */,
+				8617C95C23317B0000F96523 /* Resources */,
+				8617C95B23317AD600F96523 /* ViewControllers */,
 			);
 			path = tableviews;
 			sourceTree = "<group>";
@@ -262,6 +305,7 @@
 				86B636C1232C37DD00E366AC /* ViewController.swift in Sources */,
 				86B636BF232C37DD00E366AC /* AppDelegate.swift in Sources */,
 				86B636ED232C3F2900E366AC /* CeldaAlumnoController.swift in Sources */,
+				8617C96123317BF400F96523 /* Alumno.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
